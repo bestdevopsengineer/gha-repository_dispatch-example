@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Triggered by external system"
-      - run: echo "Payload: ${{ github.event.client_payload.message }}"
+      - run: echo "Payload:${{ github.event.client_payload.message }}"
