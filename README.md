@@ -1,1 +1,15 @@
 # gha-repository_dispatch-example
+
+
+      name: External Trigger Workflow
+
+      on:
+        repository_dispatch:
+          types: [trigger-deploy]
+      
+      jobs:
+        deploy:
+          runs-on: ubuntu-latest
+          steps:
+            - run: echo "Triggered by external system"
+            - run: echo "Payload:${{ github.event.client_payload.message }}"
