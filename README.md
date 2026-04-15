@@ -1,5 +1,6 @@
 # gha-repository_dispatch-example
 # run this from gitbash or vscode
+export GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxxx"
 
                    curl -X POST \
                     -H "Accept: application/vnd.github+json" \
